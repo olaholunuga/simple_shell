@@ -46,3 +46,31 @@
 - wait3 (man 2 wait3)
 - wait4 (man 2 wait4)
 - write (man 2 write)
+# Compilation
+-------------------------------------------------------------------------------
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+# Testing
+- Your shell should work like this in interactive mode:
+-------------------------------------------------------------------------------
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+- But also in non-interactive mode:
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+$
+# Authors
+-------------------------------------------------------------------------------
+[Bakary CAMARA](https://github.com/bakaryc50)
+[olaoluwa Olunuga](https://github.com/olaholunuga)

@@ -1,0 +1,9 @@
+# Ignore all files that aren't a README or C source code
+
+*
+!.gitignore
+!README.md
+!*.c
+!*.h
+!AUTHORS
+!man_1_simple_shell
