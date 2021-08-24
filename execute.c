@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * execute - creates a new process to execute a command
+ * execute - function creates a new process to execute a command
  * @args: NULL terminated array of argument strings
  * @env: The environmental variables
  * @status: The status struct
